@@ -2,7 +2,7 @@
 
 This project/webpage was developed using `React` v "^17.0.2",`Typescript` v "^4.5.5", and `Styled-components` v "^5.3.3" libraries.
 
-Deployed with `Netlify` link [here](https://randomquotes-adeoluwa.netlify.app/).
+Deployed with `Netlify` link [here](https://countryquiz-adeoluwa.netlify.app/).
 
 Figma design link [here](https://www.figma.com/file/Gw0ZNBbYN8asqFlZWy3jG1/Country-Quiz?node-id=1%3A2).
 
