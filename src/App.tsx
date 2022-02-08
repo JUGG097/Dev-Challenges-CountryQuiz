@@ -14,12 +14,19 @@ function App() {
 	const [selectedAnswer, setselectedAnswer] = useState(false);
 	const [answer, setanswer] = useState<AnswerObj>();
 	const [userScore, setuserScore] = useState(0);
+	const [gameOver, setgameOver] = useState(false);
 
 	const nextButton = () => {
 		// console.log(questions);
 		// console.log(questionNo);
-		setquestionNo(questionNo + 1);
-		setselectedAnswer(false);
+		if (gameOver === true) {
+			setquestionNo(5);
+		} else {
+			setquestionNo(questionNo + 1);
+			setselectedAnswer(false);
+		}
+		// setquestionNo(questionNo + 1);
+		// setselectedAnswer(false);
 	};
 
 	const checkAnswer = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -35,6 +42,7 @@ function App() {
 			// console.log(true);
 		} else {
 			correct = false;
+			setgameOver(true);
 		}
 
 		let correctOption =
@@ -51,6 +59,7 @@ function App() {
 
 	const restartQuiz = () => {
 		setquestions(RandomQuestionData());
+		setgameOver(false);
 		setquestionNo(0);
 		setuserScore(0);
 		setselectedAnswer(false);

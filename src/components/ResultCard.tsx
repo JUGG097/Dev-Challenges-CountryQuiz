@@ -13,8 +13,7 @@ const ResultCard: React.FC<ResultCardProps> = ({ reset, score }) => {
 			<h3>Results</h3>
 
 			<p>
-				You got <span>{score}</span> correct answers out of
-				<span> 5 </span>questions
+				You got <span>{score}</span> correct answers
 			</p>
 
 			<button onClick={reset}>Try again</button>
