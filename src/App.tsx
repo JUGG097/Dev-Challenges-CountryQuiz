@@ -18,7 +18,7 @@ function App() {
 
 	const nextButton = () => {
 		// console.log(questions);
-		// console.log(questionNo);
+		console.log(questionNo);
 		if (gameOver === true) {
 			setquestionNo(5);
 		} else {
