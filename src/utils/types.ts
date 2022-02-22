@@ -2,7 +2,8 @@ export type DataTypeDefinition = {
 	question: string;
 	imageQuestion: boolean;
 	imageUrl?: string;
-	answer: string;
+	answer: number;
+	answerText: string;
 	options: string[];
 }[];
 
@@ -10,7 +11,8 @@ export type QuestionProp = {
 	question: string;
 	imageQuestion: boolean;
 	imageUrl?: string;
-	answer: string;
+	answer: number;
+	answerText: string;
 	options: string[];
 };
 
